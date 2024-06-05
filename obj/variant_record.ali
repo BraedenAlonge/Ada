@@ -10,24 +10,28 @@ P ZX
 RN
 RV NO_IMPLICIT_CONDITIONALS
 RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_LOOPS
 
-U variant_record%s	variant_record.ads	59142f14 NE OO PK
+U variant_record%s	variant_record.ads	fbfe344d NE OO PK
 
 D system.ads		20230727081304 24b500cb system%s
-D variant_record.ads	20240605202414 59142f14 variant_record%s
+D variant_record.ads	20240605204114 fbfe344d variant_record%s
 G a e
-G c Z s s [exprIP variant_record 13 9 none]
+G c Z s s [exprIP variant_record 15 9 none]
 X 2 variant_record.ads
-1K9*Variant_Record 26l5 26e19
-3R9*Expr 6r31 13c9 13d15 25e14
-6P9*Expr_Access(3R9) 18r27
-8E9*Expr_Kind_Type 10e32 13r22
-8n28*Bin_Op_Plus{8E9} 17r15
-9n28*Bin_Op_Minus{8E9} 17r29
-10n28*Num{8E9} 19r15
-13e15*Kind{8E9} 16r12
-18p13*Left{6P9}
-18p19*Right{6P9}
-20i13*Val{integer}
+1K9*Variant_Record 28l5 28e19
+3R9*Expr 6r31 15c9 15d15 27e14
+6P9*Expr_Access(3R9) 20r27
+8E9*Expr_Kind_Type 12e32 15r22
+8n28*Bin_Op_Plus{8E9} 19r15
+9n28*Bin_Op_Minus{8E9} 19r29
+10n28*Bin_Op_Div{8E9} 19r44
+11n28*Bin_Op_Mult{8E9} 19r57
+12n28*Num{8E9} 21r15
+15e15*Kind{8E9} 18r12
+20p13*Left{6P9}
+20p19*Right{6P9}
+22i13*Val{integer}
 

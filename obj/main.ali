@@ -17,7 +17,7 @@ RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
 RV NO_STANDARD_STORAGE_POOLS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		main.adb		c8762ff9 NE OO SU
+U main%b		main.adb		5f74a6a4 NE OO SU
 W ada%s			ada.ads			ada.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
@@ -40,7 +40,7 @@ D a-textio.ads		20230727081304 5c2c6153 ada.text_io%s
 D a-unccon.ads		20230727081304 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20230727081304 15f799c2 interfaces%s
 D i-cstrea.ads		20230727081304 e53d8b8e interfaces.c_streams%s
-D main.adb		20240605204010 cd4e61be main%b
+D main.adb		20240605204921 f8a6f3ba main%b
 D system.ads		20230727081304 24b500cb system%s
 D s-assert.ads		20230727081304 9c4520c7 system.assertions%s
 D s-casuti.ads		20230727081304 cf13d755 system.case_util%s
@@ -69,7 +69,7 @@ D s-vauspe.ads		20230727081304 a67b2f28 system.value_u_spec%s
 D s-wchcon.ads		20230727081304 d9032363 system.wch_con%s
 D s-widuns.ads		20230727081304 866a5800 system.wid_uns%s
 D s-widthu.ads		20230727081304 b32f15e2 system.width_u%s
-D variant_record.ads	20240605202414 59142f14 variant_record%s
+D variant_record.ads	20240605204114 fbfe344d variant_record%s
 G a e
 G c Z b b [main standard 5 11 none]
 X 1 ada.ads
@@ -79,19 +79,23 @@ X 13 a-textio.ads
 566U14*Put_Line 17|32s4
 X 17 main.adb
 5U11*Main 5b11 33l5 33t9
-6V13 Eval_Expr{integer} 6>24 9s13 10s15 12s13 13s15 32s29
-6r24 E{46|13R9} 7r15 9r24 10r26 12r24 13r26 21r17
-23r5 E{46|13R9} 32r40
+6V13 Eval_Expr{integer} 6>24 9s13 10s15 12s13 13s15 15s13 16s15 18s13 19s15
+. 32s29
+6r24 E{46|15R9} 7r15 9r24 10r26 12r24 13r26 15r24 16r26 18r24 19r26 21r17
+23r5 E{46|15R9}
+28r5 E1{46|15R9} 32r40
 X 46 variant_record.ads
-1K9*Variant_Record 17|3w6 3r26 46|26e19
-3R9*Expr 17|6r28 23r9 24r21 25r31 26r31 27r21 46|25e14
+1K9*Variant_Record 17|3w6 3r26 46|28e19
+3R9*Expr 17|6r28 23r9 24r21 25r31 26r31 27r21 28r10 29r13 30r13 46|27e14
 6P9*Expr_Access(3R9)
 8n28*Bin_Op_Plus{8E9} 17|8r14 23r18
 9n28*Bin_Op_Minus{8E9} 17|11r14 24r27
-10n28*Num{8E9} 17|21r10 25r37 26r37 27r27
-13R9*Expr
-13e15*Kind{8E9} 17|7r17
-18p13*Left{6P9} 17|9r26 12r26
-18p19*Right{6P9} 17|10r28 13r28
-20i13*Val{integer} 17|21r19
+10n28*Bin_Op_Div{8E9} 17|17r14 28r19
+11n28*Bin_Op_Mult{8E9} 17|14r14
+12n28*Num{8E9} 17|21r10 25r37 26r37 27r27 29r19 30r19
+15R9*Expr
+15e15*Kind{8E9} 17|7r17
+20p13*Left{6P9} 17|9r26 12r26 15r26 18r26
+20p19*Right{6P9} 17|10r28 13r28 16r28 19r28
+22i13*Val{integer} 17|21r19
 

@@ -3,9 +3,9 @@ authors = [
 ]
 description = "ZODE 8 - Unknown Language"
 executables = [
- "main"
+ "zode8"
 ]
 
-name = "main"
+name = "zode8"
 
 version = "1.0.2"
