@@ -1,0 +1,19 @@
+[GENERATED OBJECT FILE]
+b__hello.o
+[PROJECT FILES]
+/Users/joannachou/Coding/CSC430/Project/zode8.gpr
+20240604205336 6248aa90e45f3ed97050fcf6e97dfe96
+/Users/joannachou/Coding/CSC430/Project/config/positive_config.gpr
+20240604204621 7f08ad3713fc8c4e943d1968b75d7f20
+[BOUND OBJECT FILES]
+/Users/joannachou/Coding/CSC430/Project/obj/development/hello.o
+[GENERATED SOURCE FILES]
+b__hello.ads
+b__hello.adb
+b__hello.ali
+[RESULTING OPTIONS]
+-L/Users/joannachou/Coding/CSC430/Project/obj/development/
+-L/Users/joannachou/Coding/CSC430/Project/obj/development/
+-L/users/joannachou/.local/share/alire/toolchains/gnat_native_13.2.2_9be96041/lib/gcc/x86_64-apple-darwin21.6.0/13.2.0/adalib/
+-static
+/users/joannachou/.local/share/alire/toolchains/gnat_native_13.2.2_9be96041/lib/gcc/x86_64-apple-darwin21.6.0/13.2.0/adalib/libgnat.a

@@ -1,0 +1,11 @@
+authors = [
+"Joanna Chou",
+]
+description = "ZODE 8 - Unknown Language"
+executables = [
+ "main"
+]
+
+name = "main"
+
+version = "1.0.2"

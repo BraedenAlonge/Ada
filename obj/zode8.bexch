@@ -1,0 +1,18 @@
+[GENERATED OBJECT FILE]
+b__zode8.o
+[PROJECT FILES]
+/Users/joannachou/Coding/CSC430/Project/zode8.gpr
+20240604210018 bd3322990df7db7a1b090d09e6607ded
+[BOUND OBJECT FILES]
+/Users/joannachou/Coding/CSC430/Project/obj/expr_types.o
+/Users/joannachou/Coding/CSC430/Project/obj/zode8.o
+[GENERATED SOURCE FILES]
+b__zode8.ads
+b__zode8.adb
+b__zode8.ali
+[RESULTING OPTIONS]
+-L/Users/joannachou/Coding/CSC430/Project/obj/
+-L/Users/joannachou/Coding/CSC430/Project/obj/
+-L/users/joannachou/.local/share/alire/toolchains/gnat_native_13.2.2_9be96041/lib/gcc/x86_64-apple-darwin21.6.0/13.2.0/adalib/
+-static
+/users/joannachou/.local/share/alire/toolchains/gnat_native_13.2.2_9be96041/lib/gcc/x86_64-apple-darwin21.6.0/13.2.0/adalib/libgnat.a

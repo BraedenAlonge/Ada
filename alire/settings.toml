@@ -1,0 +1,4 @@
+last_build_profile = "main=DEVELOPMENT"
+[editor]
+cmd = "/Applications/VisualStudioCode.app/Contents/Resources/app/bin/code workspace.code-workspace"
+

@@ -1,0 +1,24 @@
+[GENERATED OBJECT FILE]
+b__positive.o
+[PROJECT FILES]
+/Users/joannachou/Coding/CSC430/Project/hello.gpr
+20240604204234 c83b5e6e4508852ccbe3cb7d61d8823c
+/Users/joannachou/.local/share/alire/builds/libhello_1.0.1_3c15bc7f/953b84f674ec4aae35aaed99db5e3268027446cc892a235284820c20c751ccd6/config/libhello_config.gpr
+20240604003617 bd5ae29238ca220f49ac9e54a6cba389
+/Users/joannachou/.local/share/alire/builds/libhello_1.0.1_3c15bc7f/953b84f674ec4aae35aaed99db5e3268027446cc892a235284820c20c751ccd6/libhello.gpr
+20240603204125 29f3f552a62fc11e93de64a3c73673c6
+/Users/joannachou/Coding/CSC430/Project/config/hello_config.gpr
+20240604003728 93c6a19718c899e72cd4fd89d52f51ba
+[BOUND OBJECT FILES]
+/Users/joannachou/Coding/CSC430/Project/obj/development/positive.o
+[GENERATED SOURCE FILES]
+b__positive.ads
+b__positive.adb
+b__positive.ali
+[RESULTING OPTIONS]
+-L/Users/joannachou/Coding/CSC430/Project/obj/development/
+-L/Users/joannachou/Coding/CSC430/Project/obj/development/
+-L/Users/joannachou/.local/share/alire/builds/libhello_1.0.1_3c15bc7f/953b84f674ec4aae35aaed99db5e3268027446cc892a235284820c20c751ccd6/lib/
+-L/users/joannachou/.local/share/alire/toolchains/gnat_native_13.2.2_9be96041/lib/gcc/x86_64-apple-darwin21.6.0/13.2.0/adalib/
+-static
+/users/joannachou/.local/share/alire/toolchains/gnat_native_13.2.2_9be96041/lib/gcc/x86_64-apple-darwin21.6.0/13.2.0/adalib/libgnat.a

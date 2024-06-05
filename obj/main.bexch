@@ -1,0 +1,18 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/Users/joannachou/Coding/CSC430/Project/main.gpr
+20240605202925 5e90f00a2d90e46d000741885c268e2a
+[BOUND OBJECT FILES]
+/Users/joannachou/Coding/CSC430/Project/obj/variant_record.o
+/Users/joannachou/Coding/CSC430/Project/obj/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/Users/joannachou/Coding/CSC430/Project/obj/
+-L/Users/joannachou/Coding/CSC430/Project/obj/
+-L/users/joannachou/.local/share/alire/toolchains/gnat_native_13.2.2_9be96041/lib/gcc/x86_64-apple-darwin21.6.0/13.2.0/adalib/
+-static
+/users/joannachou/.local/share/alire/toolchains/gnat_native_13.2.2_9be96041/lib/gcc/x86_64-apple-darwin21.6.0/13.2.0/adalib/libgnat.a

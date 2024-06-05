@@ -1,0 +1,97 @@
+V "GNAT Lib v13"
+M P W=b
+A -gnatA
+A -g
+A -mmacosx-version-min=12.0.0
+A -mtune=core2
+A -fPIC
+A -feliminate-unused-debug-symbols
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_RECURSION
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U main%b		main.adb		c8762ff9 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.img_int%s	s-imgint.ads		s-imgint.ali
+W variant_record%s	variant_record.ads	variant_record.ali
+
+D ada.ads		20230727081304 76789da1 ada%s
+D a-assert.ads		20230727081303 ba465f5c ada.assertions%s
+D a-except.ads		20230727081304 2a7d8d70 ada.exceptions%s
+D a-ioexce.ads		20230727081304 40018c65 ada.io_exceptions%s
+D a-numeri.ads		20230727081304 84bea7a3 ada.numerics%s
+D a-nubinu.ads		20230727081304 93f1f3d1 ada.numerics.big_numbers%s
+D a-nbnbig.ads		20230727081304 711e0174 ada.numerics.big_numbers.big_integers_ghost%s
+D a-stream.ads		20230727081304 119b8fb3 ada.streams%s
+D a-string.ads		20230727081304 90ac6797 ada.strings%s
+D a-sttebu.ads		20230727081304 f1ad67a2 ada.strings.text_buffers%s
+D a-stuten.ads		20230727081304 c6ced0ae ada.strings.utf_encoding%s
+D a-tags.ads		20230727081304 9eaa38c6 ada.tags%s
+D a-textio.ads		20230727081304 5c2c6153 ada.text_io%s
+D a-unccon.ads		20230727081304 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20230727081304 15f799c2 interfaces%s
+D i-cstrea.ads		20230727081304 e53d8b8e interfaces.c_streams%s
+D main.adb		20240605204010 cd4e61be main%b
+D system.ads		20230727081304 24b500cb system%s
+D s-assert.ads		20230727081304 9c4520c7 system.assertions%s
+D s-casuti.ads		20230727081304 cf13d755 system.case_util%s
+D s-crtl.ads		20230727081304 8a0692f8 system.crtl%s
+D s-exctab.ads		20230727081304 91bef6ef system.exception_table%s
+D s-ficobl.ads		20230727081304 dc5161d4 system.file_control_block%s
+D s-imagei.ads		20230727081304 c707dfd0 system.image_i%s
+D s-imgint.ads		20230727081304 d4a52a9b system.img_int%s
+D s-parame.ads		20230727081304 d494a4a6 system.parameters%s
+D s-putima.ads		20230727081304 17291fe4 system.put_images%s
+D s-secsta.ads		20230727081304 578279f5 system.secondary_stack%s
+D s-soflin.ads		20230727081304 df77073e system.soft_links%s
+D s-stache.ads		20230727081304 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20230727081304 1c9580f6 system.standard_library%s
+D s-stoele.ads		20230727081304 ab5468e4 system.storage_elements%s
+D s-stoele.adb		20230727081304 8f5a9db6 system.storage_elements%b
+D s-traent.ads		20230727081304 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20230727081304 fa2a7f59 system.unsigned_types%s
+D s-valint.ads		20230727081304 1f610d7a system.val_int%s
+D s-valuns.ads		20230727081304 e8a1f424 system.val_uns%s
+D s-valuti.ads		20230727081304 fcd603d8 system.val_util%s
+D s-valuei.ads		20230727081304 11081e09 system.value_i%s
+D s-vaispe.ads		20230727081304 44130d39 system.value_i_spec%s
+D s-valueu.ads		20230727081304 18770347 system.value_u%s
+D s-vauspe.ads		20230727081304 a67b2f28 system.value_u_spec%s
+D s-wchcon.ads		20230727081304 d9032363 system.wch_con%s
+D s-widuns.ads		20230727081304 866a5800 system.wid_uns%s
+D s-widthu.ads		20230727081304 b32f15e2 system.width_u%s
+D variant_record.ads	20240605202414 59142f14 variant_record%s
+G a e
+G c Z b b [main standard 5 11 none]
+X 1 ada.ads
+16K9*Ada 20e8 17|1r6 1r26
+X 13 a-textio.ads
+58K13*Text_IO 787e16 17|1w10 1r30
+566U14*Put_Line 17|32s4
+X 17 main.adb
+5U11*Main 5b11 33l5 33t9
+6V13 Eval_Expr{integer} 6>24 9s13 10s15 12s13 13s15 32s29
+6r24 E{46|13R9} 7r15 9r24 10r26 12r24 13r26 21r17
+23r5 E{46|13R9} 32r40
+X 46 variant_record.ads
+1K9*Variant_Record 17|3w6 3r26 46|26e19
+3R9*Expr 17|6r28 23r9 24r21 25r31 26r31 27r21 46|25e14
+6P9*Expr_Access(3R9)
+8n28*Bin_Op_Plus{8E9} 17|8r14 23r18
+9n28*Bin_Op_Minus{8E9} 17|11r14 24r27
+10n28*Num{8E9} 17|21r10 25r37 26r37 27r27
+13R9*Expr
+13e15*Kind{8E9} 17|7r17
+18p13*Left{6P9} 17|9r26 12r26
+18p19*Right{6P9} 17|10r28 13r28
+20i13*Val{integer} 17|21r19
+
