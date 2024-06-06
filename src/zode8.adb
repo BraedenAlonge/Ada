@@ -3,7 +3,7 @@ with Ada.Text_IO;    use Ada.Text_IO;
 with Variant_Record; use Variant_Record;
 
 procedure Main is
-   function Eval_Expr (E : Expr) return Integer is
+    function Eval_Expr (E : Expr) return Integer is
         (case E.Kind is
         when Bin_Op_Plus  =>
             Eval_Expr (E.Left.all)
@@ -29,5 +29,5 @@ procedure Main is
         new Expr'(Num, 1), 
         new Expr'(Num, 1));
 begin
-   Put_Line (Integer'Image (Eval_Expr (E1)));
+    Put_Line (Integer'Image (Eval_Expr (E1)));
 end Main; 

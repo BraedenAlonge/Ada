@@ -26,7 +26,13 @@ package body ada_main is
    E093 : Short_Integer; pragma Import (Ada, E093, "system__finalization_root_E");
    E091 : Short_Integer; pragma Import (Ada, E091, "ada__finalization_E");
    E090 : Short_Integer; pragma Import (Ada, E090, "system__file_io_E");
+   E136 : Short_Integer; pragma Import (Ada, E136, "system__storage_pools_E");
+   E132 : Short_Integer; pragma Import (Ada, E132, "system__finalization_masters_E");
    E078 : Short_Integer; pragma Import (Ada, E078, "ada__text_io_E");
+   E112 : Short_Integer; pragma Import (Ada, E112, "ada__strings__maps_E");
+   E108 : Short_Integer; pragma Import (Ada, E108, "ada__strings__unbounded_E");
+   E138 : Short_Integer; pragma Import (Ada, E138, "system__pool_global_E");
+   E106 : Short_Integer; pragma Import (Ada, E106, "variant_record_E");
 
    Sec_Default_Sized_Stacks : array (1 .. 1) of aliased System.Secondary_Stack.SS_Stack (System.Parameters.Runtime_Default_Sec_Stack_Size);
 
@@ -37,19 +43,47 @@ package body ada_main is
 
    procedure finalize_library is
    begin
-      E078 := E078 - 1;
       declare
          procedure F1;
-         pragma Import (Ada, F1, "ada__text_io__finalize_spec");
+         pragma Import (Ada, F1, "variant_record__finalize_spec");
       begin
+         E106 := E106 - 1;
          F1;
       end;
+      E138 := E138 - 1;
       declare
          procedure F2;
-         pragma Import (Ada, F2, "system__file_io__finalize_body");
+         pragma Import (Ada, F2, "system__pool_global__finalize_spec");
+      begin
+         F2;
+      end;
+      E108 := E108 - 1;
+      declare
+         procedure F3;
+         pragma Import (Ada, F3, "ada__strings__unbounded__finalize_spec");
+      begin
+         F3;
+      end;
+      E078 := E078 - 1;
+      declare
+         procedure F4;
+         pragma Import (Ada, F4, "ada__text_io__finalize_spec");
+      begin
+         F4;
+      end;
+      E132 := E132 - 1;
+      declare
+         procedure F5;
+         pragma Import (Ada, F5, "system__finalization_masters__finalize_spec");
+      begin
+         F5;
+      end;
+      declare
+         procedure F6;
+         pragma Import (Ada, F6, "system__file_io__finalize_body");
       begin
          E090 := E090 - 1;
-         F2;
+         F6;
       end;
       declare
          procedure Reraise_Library_Exception_If_Any;
@@ -191,9 +225,22 @@ package body ada_main is
       E091 := E091 + 1;
       System.File_Io'Elab_Body;
       E090 := E090 + 1;
+      System.Storage_Pools'Elab_Spec;
+      E136 := E136 + 1;
+      System.Finalization_Masters'Elab_Spec;
+      System.Finalization_Masters'Elab_Body;
+      E132 := E132 + 1;
       Ada.Text_Io'Elab_Spec;
       Ada.Text_Io'Elab_Body;
       E078 := E078 + 1;
+      Ada.Strings.Maps'Elab_Spec;
+      E112 := E112 + 1;
+      Ada.Strings.Unbounded'Elab_Spec;
+      E108 := E108 + 1;
+      System.Pool_Global'Elab_Spec;
+      E138 := E138 + 1;
+      Variant_Record'Elab_Spec;
+      E106 := E106 + 1;
    end adainit;
 
    procedure Ada_Main_Program;
@@ -231,11 +278,11 @@ package body ada_main is
    end;
 
 --  BEGIN Object file/option list
-   --   /Users/joannachou/Coding/CSC430/Project/obj/variant_record.o
-   --   /Users/joannachou/Coding/CSC430/Project/obj/zode8.o
-   --   -L/Users/joannachou/Coding/CSC430/Project/obj/
-   --   -L/Users/joannachou/Coding/CSC430/Project/obj/
-   --   -L/users/joannachou/.local/share/alire/toolchains/gnat_native_13.2.2_9be96041/lib/gcc/x86_64-apple-darwin21.6.0/13.2.0/adalib/
+   --   /Users/natha/Ada-1/obj/variant_record.o
+   --   /Users/natha/Ada-1/obj/zode8.o
+   --   -L/Users/natha/Ada-1/obj/
+   --   -L/Users/natha/Ada-1/obj/
+   --   -L/users/natha/.local/share/alire/toolchains/gnat_native_13.2.2_9be96041/lib/gcc/x86_64-apple-darwin21.6.0/13.2.0/adalib/
    --   -static
    --   -lgnat
 --  END Object file/option list   
