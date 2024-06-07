@@ -13,7 +13,7 @@ procedure Main is
     function Convert_To_StrV (SC : StrC) return StrV is
     begin
         return (Str => SC.Value);
-    end Convert_To_NumV;
+    end Convert_To_StrV;
     
 
     function Interp (exp : ExprC; env : En) return Integer is 
