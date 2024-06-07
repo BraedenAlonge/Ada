@@ -9,19 +9,33 @@ A -feliminate-unused-debug-symbols
 P SS ZX
 
 RN
-RV NO_ALLOCATORS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
 RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
 RV NO_LOCAL_ALLOCATORS
-RV NO_RECURSION
-RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_NESTED_FINALIZATION
+RV NO_SECONDARY_STACK
 RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
 RV NO_IMPLEMENTATION_PRAGMAS
 
-U main%b		zode8.adb		bcb75d5c NE OO SU
+U main%b		zode8.adb		af95fdfa NE OO SU
 W ada%s			ada.ads			ada.ali
+W ada.assertions%s	a-assert.adb		a-assert.ali
+Z ada.exceptions%s	a-except.adb		a-except.ali
+W ada.strings%s		a-string.ads		a-string.ali
 Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
 W ada.text_io%s		a-textio.adb		a-textio.ali
-Z system.img_int%s	s-imgint.ads		s-imgint.ali
+Z system%s		system.ads		system.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.concat_4%s	s-conca4.adb		s-conca4.ali
+Z system.img_flt%s	s-imgflt.ads		s-imgflt.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.soft_links%s	s-soflin.adb		s-soflin.ali
+Z system.standard_library%s  s-stalib.adb	s-stalib.ali
 W variant_record%s	variant_record.ads	variant_record.ali
 
 D ada.ads		20230727081304 76789da1 ada%s
@@ -45,69 +59,101 @@ D a-textio.ads		20230727081304 5c2c6153 ada.text_io%s
 D a-unccon.ads		20230727081304 0e9b276f ada.unchecked_conversion%s
 D interfac.ads		20230727081304 15f799c2 interfaces%s
 D i-cstrea.ads		20230727081304 e53d8b8e interfaces.c_streams%s
-D zode8.adb		20240606085502 f8a6f3ba main%b
+D zode8.adb		20240607043939 eae76860 main%b
 D system.ads		20230727081304 24b500cb system%s
 D s-assert.ads		20230727081304 9c4520c7 system.assertions%s
 D s-atocou.ads		20230727081304 dc18efc3 system.atomic_counters%s
 D s-casuti.ads		20230727081304 cf13d755 system.case_util%s
+D s-conca2.ads		20230727081304 b5fb73f7 system.concat_2%s
+D s-conca4.ads		20230727081304 33f85f3e system.concat_4%s
 D s-crtl.ads		20230727081304 8a0692f8 system.crtl%s
 D s-exctab.ads		20230727081304 91bef6ef system.exception_table%s
 D s-ficobl.ads		20230727081304 dc5161d4 system.file_control_block%s
 D s-finmas.ads		20230727081304 bd688734 system.finalization_masters%s
 D s-finroo.ads		20230727081304 4ff27390 system.finalization_root%s
-D s-imagei.ads		20230727081304 c707dfd0 system.image_i%s
-D s-imgint.ads		20230727081304 d4a52a9b system.img_int%s
+D s-imager.ads		20230727081304 45c7157d system.image_r%s
+D s-imageu.ads		20230727081304 631c6ed0 system.image_u%s
+D s-imgflt.ads		20230727081304 d12816b5 system.img_flt%s
+D s-imguns.ads		20230727081304 7867236f system.img_uns%s
+D s-memory.ads		20230727081304 5b8432d0 system.memory%s
 D s-parame.ads		20230727081304 d494a4a6 system.parameters%s
 D s-pooglo.ads		20230727081304 91708d21 system.pool_global%s
+D s-powflt.ads		20230727081304 a51ab9b8 system.powten_flt%s
 D s-putima.ads		20230727081304 17291fe4 system.put_images%s
 D s-retsta.ads		20230727081304 0f6b06cb system.return_stack%s
 D s-secsta.ads		20230727081304 578279f5 system.secondary_stack%s
 D s-soflin.ads		20230727081304 df77073e system.soft_links%s
 D s-stache.ads		20230727081304 0b81c1fe system.stack_checking%s
 D s-stalib.ads		20230727081304 1c9580f6 system.standard_library%s
+D s-stalib.adb		20230727081304 eb464a47 system.standard_library%b
 D s-stoele.ads		20230727081304 ab5468e4 system.storage_elements%s
 D s-stoele.adb		20230727081304 8f5a9db6 system.storage_elements%b
 D s-stopoo.ads		20230727081304 e9fa2dd8 system.storage_pools%s
 D s-stratt.ads		20230727081304 f7dfd786 system.stream_attributes%s
 D s-traent.ads		20230727081304 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20230727081304 fa2a7f59 system.unsigned_types%s
-D s-valint.ads		20230727081304 1f610d7a system.val_int%s
 D s-valuns.ads		20230727081304 e8a1f424 system.val_uns%s
 D s-valuti.ads		20230727081304 fcd603d8 system.val_util%s
-D s-valuei.ads		20230727081304 11081e09 system.value_i%s
-D s-vaispe.ads		20230727081304 44130d39 system.value_i_spec%s
 D s-valueu.ads		20230727081304 18770347 system.value_u%s
 D s-vauspe.ads		20230727081304 a67b2f28 system.value_u_spec%s
 D s-wchcon.ads		20230727081304 d9032363 system.wch_con%s
 D s-widuns.ads		20230727081304 866a5800 system.wid_uns%s
 D s-widthu.ads		20230727081304 b32f15e2 system.width_u%s
-D variant_record.ads	20240606091348 183dcfb5 variant_record%s
+D variant_record.ads	20240607035308 d8e3db85 variant_record%s
 G a e
-G c Z b b [main standard 5 11 none]
+G c Z b b [main standard 6 11 none]
+G r k value [main standard 6 11 none] [valueDF variant_record 68 9 none]
+G r j value [main standard 6 11 none] [valueDA variant_record 68 9 none]
 X 1 ada.ads
-16K9*Ada 20e8 22|1r6 1r26
+16K9*Ada 20e8 22|1r6 1r26 2r6 2r26 3r6 3r33 59r5
+X 2 a-assert.ads
+42K13*Assertions 53e19 22|2w10 2r30
+50U14*Assert 22|40s5 44s5 48s5 52s5 56s5
+X 12 a-string.ads
+16K13*Strings 35e16 22|3r10 3r37
+X 15 a-strunb.ads
+85K21*Unbounded 766e26 22|3w18 3r45
 X 18 a-textio.ads
-58K13*Text_IO 787e16 22|1w10 1r30
-566U14*Put_Line 22|32s5
+58K13*Text_IO 787e16 22|1w10 1r30 59r9
+566U14*Put_Line 22|59s17
 X 22 zode8.adb
-5U11*Main 5b11 33l5 33t9
-6V14 Eval_Expr{integer} 6>25 9s13 10s15 12s13 13s15 15s13 16s15 18s13 19s15
-. 32s30
-6r25 E{58|95R9} 7r15 9r24 10r26 12r24 13r26 15r24 16r26 18r24 19r26 21r17
-23r5 E{58|95R9}
-28r5 E1{58|95R9} 32r41
-X 58 variant_record.ads
-2K9*Variant_Record 22|3w6 3r26 58|108e19
-4R9*Expr 22|6r29 23r9 24r21 25r31 26r31 27r21 28r10 29r13 30r13 58|107e14
-86P9*Expr_Access(4R9)
-88n28*Bin_Op_Plus{88E9} 22|8r14 23r18
-89n28*Bin_Op_Minus{88E9} 22|11r14 24r27
-90n28*Bin_Op_Div{88E9} 22|17r14 28r19
-91n28*Bin_Op_Mult{88E9} 22|14r14
-92n28*Num{88E9} 22|21r10 25r37 26r37 27r27 29r19 30r19
-95R9*Expr
-95e15*Kind{88E9} 22|7r17
-100p13*Left{86P9} 22|9r26 12r26 15r26 18r26
-100p19*Right{86P9} 22|10r28 13r28 16r28 19r28
-102i13*Val{integer} 22|21r19
+6U11*Main 6b11 61l5 61t9
+8V14 Calc_Primop{62|68R9} 8b14 8>27 8>40 8>54 23l9 23t20 43s21 47s21 51s21
+. 55s21
+8a27 Op{string} 11r12 13r15 15r15 17r15
+8r40 Left{62|31R9} 12r45 14r45 16r45 18r45
+8r54 Right{62|31R9} 12r54 14r54 16r54 18r54
+9r9 Result{62|68R9} 12m13 12r13 14m13 14r13 16m13 16r13 18m13 18r13 20m13
+. 20r13 22r16
+26V14 Float_Equal{boolean} 26b14 26>27 26>30 29l9 29t20 40s13 44s13 48s13
+. 52s13 56s13
+26f27 A{float} 28r21
+26f30 B{float} 28r25
+32r5 Num1{62|31R9} 39r21 43r38 47r38 51r38 55r38
+33r5 Num2{62|31R9} 43r44 47r44 51r44 55r44
+34f5 Result_Float{float} 39m5 40r26 40r104
+35r5 Result_Value{62|68R9} 43m5 43r5 44r26 44r149 47m5 47r5 48r26 48r152
+. 51m5 51r5 52r26 52r155 55m5 55r5 56r26 56r149
+X 23 system.ads
+67M9*Address
+X 38 s-memory.ads
+51V13*Alloc{23|67M9} 101i<c,__gnat_malloc>22
+66U14*Free 102i<c,__gnat_free>22
+74V13*Realloc{23|67M9} 103i<c,__gnat_realloc>22
+X 48 s-stalib.adb
+87U14 Break_Start 88i<c,__gnat_break_start>22
+X 62 variant_record.ads
+2K9*Variant_Record 22|4w6 4r26 62|108e19
+5R9*ExprC 22|8r47 8r62 32r12 33r12 62|50e14
+6R9*Value 22|8r76 9r18 35r20 62|83e14
+11n24*NumC{11E9} 22|32r30 33r30
+31R9*ExprC
+31e16*Kind{11E9} 22|32m22 33m22
+34f13*N{float} 22|12r50 12r60 14r50 14r60 16r50 16r60 18r50 18r60 32m36 33m36
+. 39r26
+66n24*NumV{66E9} 22|9r36 12r32 14r32 16r32 18r32 20r32 35r38
+68R9*Value
+68e16*Kind{66E9} 22|9m28 35m30
+71f13*Val{float} 22|9m42 12m38 14m38 16m38 18m38 20m38 35m44 44r39 44r162
+. 48r39 48r165 52r39 52r168 56r39 56r162
 

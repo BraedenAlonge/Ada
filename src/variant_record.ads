@@ -68,7 +68,7 @@ package Variant_Record is
    type Value (Kind : Value_Type) is record
       case Kind is
          when NumV =>
-            Val : Integer;
+            Val : Float;
          when CloV =>
             Params : Unbounded_String_Array_Access;
             Bod : ExprC_Access;

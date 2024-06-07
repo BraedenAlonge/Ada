@@ -19,7 +19,7 @@ RV NO_IMPLEMENTATION_PRAGMAS
 RV NO_IMPLICIT_LOOPS
 RV NO_ELABORATION_CODE
 
-U variant_record%s	variant_record.ads	63c6bfa5 EE OO PF PK
+U variant_record%s	variant_record.ads	a318ab95 EE OO PF PK
 W ada%s			ada.ads			ada.ali
 Z ada.exceptions%s	a-except.adb		a-except.ali
 W ada.strings%s		a-string.ads		a-string.ali
@@ -67,7 +67,7 @@ D s-stopoo.ads		20230727081304 e9fa2dd8 system.storage_pools%s
 D s-stratt.ads		20230727081304 f7dfd786 system.stream_attributes%s
 D s-traent.ads		20230727081304 c81cbf8c system.traceback_entries%s
 D s-unstyp.ads		20230727081304 fa2a7f59 system.unsigned_types%s
-D variant_record.ads	20240606091348 183dcfb5 variant_record%s
+D variant_record.ads	20240607035308 d8e3db85 variant_record%s
 G a e
 G c Z s s [exprIP variant_record 95 9 none]
 G c Z s s [exprcDI variant_record 31 9 none]
@@ -152,7 +152,7 @@ X 36 variant_record.ads
 66n42*BoolV{66E9} 78r15
 66n49*PrimV{66E9} 80r15
 68e16*Kind{66E9} 69r12
-71i13*Val{integer}
+71f13*Val{float}
 73p13*Params{17P9}
 74p13*Bod{19P9}
 75p13*Env{29P9}
