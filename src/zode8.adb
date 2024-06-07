@@ -60,5 +60,26 @@ procedure Main is
     Result_Value : Value := (Kind => NumV, Val => 0.0); -- Initialize Result_Value
 
 begin
-    Put_Line (Integer'Image (Eval_Expr (E1)));
+    -- Test case 1: NumC
+    Result_Float := Num1.N;
+    Assert (Float_Equal (Result_Float, 3.14), "Test case 1 failed: expected 3.14, got " & Float'Image (Result_Float));
+
+    -- Test case 2: Addition
+    Result_Value := Calc_Primop("+", Num1, Num2);
+    Assert (Float_Equal (Result_Value.Val, 3.14 + 5.80), "Addition Test case failed: expected " & Float'Image(3.14 + 5.80) & ", got " & Float'Image(Result_Value.Val));
+
+    -- Test case 3: Subtraction
+    Result_Value := Calc_Primop("-", Num1, Num2);
+    Assert (Float_Equal (Result_Value.Val, 3.14 - 5.80), "Subtraction Test case failed: expected " & Float'Image(3.14 - 5.80) & ", got " & Float'Image(Result_Value.Val));
+
+    -- Test case 4: Multiplication
+    Result_Value := Calc_Primop("*", Num1, Num2);
+    Assert (Float_Equal (Result_Value.Val, 3.14 * 5.80), "Multiplication Test case failed: expected " & Float'Image(3.14 * 5.80) & ", got " & Float'Image(Result_Value.Val));
+
+    -- Test case 5: Division
+    Result_Value := Calc_Primop("/", Num1, Num2);
+    Assert (Float_Equal (Result_Value.Val, 3.14 / 5.80), "Division Test case failed: expected " & Float'Image(3.14 / 5.80) & ", got " & Float'Image(Result_Value.Val));
+
+    -- Output a success message if all tests pass
+    Ada.Text_IO.Put_Line("All test cases passed successfully.");
 end Main; 
